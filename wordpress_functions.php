@@ -52,7 +52,9 @@ function get_posts_array($custom_post_type = 'post'){
 		'post_type' => $custom_post_type,
 		'posts_per_page' => -1,
     );
-    
+	
+	$posts_array = array();
+		
 	$query = new WP_Query( $args );
 
 	if ( $query->have_posts() ) :
