@@ -4,7 +4,6 @@
  *  @return json string
  **/
 function generate_json_file() {
-
     return json_encode(array());
 }
 
